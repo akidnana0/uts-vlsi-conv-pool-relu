@@ -1,4 +1,4 @@
-# Simulation outputs
+# Output simulasi sementara
 sim/
 *.vcd
 *.fst
