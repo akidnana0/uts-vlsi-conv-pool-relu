@@ -1,0 +1,198 @@
+
+10. Printing statistics.
+
+=== $paramod$377bafd0775106ecb2ba8a070821de19b4bf823b\cnn_control ===
+
+   Number of wires:                141
+   Number of wire bits:            188
+   Number of public wires:          25
+   Number of public wire bits:      59
+   Number of ports:                 18
+   Number of port bits:             37
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                171
+     $_ANDNOT_                      57
+     $_AND_                          6
+     $_DFFE_PN0P_                   23
+     $_MUX_                          3
+     $_NAND_                        16
+     $_NOR_                          4
+     $_NOT_                          2
+     $_ORNOT_                       21
+     $_OR_                          20
+     $_XNOR_                         6
+     $_XOR_                         13
+
+=== $paramod$79d024bb6b3e274cc0a26ecd8c4276f73a1d0b2b\conv_mac ===
+
+   Number of wires:                545
+   Number of wire bits:            629
+   Number of public wires:           9
+   Number of public wire bits:      74
+   Number of ports:                  7
+   Number of port bits:             40
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                575
+     $_ANDNOT_                     191
+     $_AND_                         60
+     $_DFFE_PN0P_                   20
+     $_NAND_                        27
+     $_NOR_                          8
+     $_NOT_                         27
+     $_ORNOT_                       16
+     $_OR_                          48
+     $_XNOR_                        39
+     $_XOR_                        139
+
+=== $paramod$aea8a455d56e869ba8a02457fbe3af0baeb0291b\image_buffer ===
+
+   Number of wires:               2856
+   Number of wire bits:           4682
+   Number of public wires:         264
+   Number of public wire bits:    2090
+   Number of ports:                  7
+   Number of port bits:             34
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               4648
+     $_ANDNOT_                     256
+     $_DFFE_PP_                   2048
+     $_MUX_                       2040
+     $_NAND_                         4
+     $_ORNOT_                        8
+     $_OR_                         292
+
+=== $paramod$e2803666fafcd9feca7c1a1d2a16b45bf1593d91\requant_unit ===
+
+   Number of wires:                  6
+   Number of wire bits:             43
+   Number of public wires:           3
+   Number of public wire bits:      40
+   Number of ports:                  2
+   Number of port bits:             28
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $_OR_                          11
+
+=== $paramod$f354820a7faed3c1e9f33d9f7bf554290d25d92e\kernel_buffer ===
+
+   Number of wires:                583
+   Number of wire bits:            812
+   Number of public wires:          35
+   Number of public wire bits:     264
+   Number of ports:                  7
+   Number of port bits:             43
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                788
+     $_ANDNOT_                      34
+     $_AND_                          1
+     $_DFFE_PP_                    216
+     $_MUX_                        472
+     $_NAND_                         3
+     $_NOT_                          5
+     $_ORNOT_                        7
+     $_OR_                          39
+     $_XNOR_                         2
+     $_XOR_                          9
+
+=== $paramod\maxpool_unit\ACC_WIDTH=s32'00000000000000000000000000010100 ===
+
+   Number of wires:                107
+   Number of wire bits:            145
+   Number of public wires:           6
+   Number of public wire bits:      44
+   Number of ports:                  6
+   Number of port bits:             44
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                121
+     $_ANDNOT_                      52
+     $_AND_                          4
+     $_DFFE_PN0P_                   20
+     $_NAND_                         1
+     $_ORNOT_                       19
+     $_OR_                           4
+     $_XNOR_                         8
+     $_XOR_                         13
+
+=== $paramod\relu_unit\ACC_WIDTH=s32'00000000000000000000000000010100 ===
+
+   Number of wires:                  2
+   Number of wire bits:             40
+   Number of public wires:           2
+   Number of public wire bits:      40
+   Number of ports:                  2
+   Number of port bits:             40
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 19
+     $_ANDNOT_                      19
+
+=== cnn_top ===
+
+   Number of wires:                 28
+   Number of wire bits:            314
+   Number of public wires:          28
+   Number of public wire bits:     314
+   Number of ports:                  9
+   Number of port bits:             46
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 40
+     $_DFFE_PN0P_                   24
+     $_DFF_PN0_                      1
+     $paramod$377bafd0775106ecb2ba8a070821de19b4bf823b\cnn_control      1
+     $paramod$79d024bb6b3e274cc0a26ecd8c4276f73a1d0b2b\conv_mac      3
+     $paramod$aea8a455d56e869ba8a02457fbe3af0baeb0291b\image_buffer      1
+     $paramod$e2803666fafcd9feca7c1a1d2a16b45bf1593d91\requant_unit      3
+     $paramod$f354820a7faed3c1e9f33d9f7bf554290d25d92e\kernel_buffer      1
+     $paramod\maxpool_unit\ACC_WIDTH=s32'00000000000000000000000000010100      3
+     $paramod\relu_unit\ACC_WIDTH=s32'00000000000000000000000000010100      3
+
+=== design hierarchy ===
+
+   cnn_top                           1
+     $paramod$377bafd0775106ecb2ba8a070821de19b4bf823b\cnn_control      1
+     $paramod$79d024bb6b3e274cc0a26ecd8c4276f73a1d0b2b\conv_mac      3
+     $paramod$aea8a455d56e869ba8a02457fbe3af0baeb0291b\image_buffer      1
+     $paramod$e2803666fafcd9feca7c1a1d2a16b45bf1593d91\requant_unit      3
+     $paramod$f354820a7faed3c1e9f33d9f7bf554290d25d92e\kernel_buffer      1
+     $paramod\maxpool_unit\ACC_WIDTH=s32'00000000000000000000000000010100      3
+     $paramod\relu_unit\ACC_WIDTH=s32'00000000000000000000000000010100      3
+
+   Number of wires:               5588
+   Number of wire bits:           8567
+   Number of public wires:         412
+   Number of public wire bits:    3321
+   Number of ports:                 92
+   Number of port bits:            616
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               7810
+     $_ANDNOT_                    1133
+     $_AND_                        199
+     $_DFFE_PN0P_                  167
+     $_DFFE_PP_                   2264
+     $_DFF_PN0_                      1
+     $_MUX_                       2515
+     $_NAND_                       107
+     $_NOR_                         28
+     $_NOT_                         88
+     $_ORNOT_                      141
+     $_OR_                         540
+     $_XNOR_                       149
+     $_XOR_                        478
+
