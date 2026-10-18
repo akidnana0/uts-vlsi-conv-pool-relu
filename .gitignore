@@ -1,0 +1,18 @@
+# Simulation outputs
+sim/
+*.vcd
+*.fst
+*.vvp
+*.out
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Editor / OS
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+*.swp
+.DS_Store
